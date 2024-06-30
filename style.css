@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #f0e9ee;
+  font-family: "Libre Caslon Text", sans-serif;
+}
+
+.sidebar {
+  margin-top: 16px;
+  padding: 0;
+  width: 200px;
+
+  position: fixed;
+  min-height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+.sidebar span {
+  font-family: "Uncial Antiqua";
+  font-size: 25px;
+  color: rgb(136, 53, 136);
+}
+.short-logo {
+  display: none;
+}
+.sidebar a {
+  font-family: "Libre Caslon Text", sans-serif;
+  font-size: 15px;
+  margin-top: 16px;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: #c764c7;
+}
+
+.sidebar a:hover:not(.active) {
+  color: rgb(216, 98, 187);
+}
+
+.container-fluid {
+  padding: 1px;
+  width: auto;
+  margin-left: 200px;
+}
+.container {
+  margin: 0;
+  min-width: 100%;
+  margin-top: 16px;
+}
+
+.header {
+  height: 600px;
+  background-image: url(./image/top.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.header h1 {
+  padding: 350px 0px 0px 50px;
+  font-size: 60px;
+  font-family: "Uncial Antiqua", sans-serif;
+}
+.header p {
+  margin-left: 0;
+  padding-left: 55px;
+  font-size: 25px;
+}
+.model-section {
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+.model-section img p {
+  width: 340px;
+  height: 200px;
+  align-items: center;
+}
+.model-section h1 {
+  font-size: 18px;
+  text-align: center;
+}
+.model-section p {
+  margin-top: 10px;
+  text-align: justify;
+}
+.package p {
+  text-align: justify;
+}
+.package h1,
+.contacts h1,
+.address h1 {
+  font-size: 23px;
+}
+.address p,
+.contacts p {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    min-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .container {
+    min-width: 100%;
+  }
+  .container-fluid {
+    margin: 0;
+    width: auto;
+  }
+  .sidebar a,
+  .sidebar span {
+    float: left;
+  }
+
+  .header h1 {
+    padding: 450px 0px 0px 50px;
+  }
+
+  .short-logo {
+    display: inline;
+    margin-top: 13px;
+    padding: 13px;
+  }
+  .full-logo {
+    display: none;
+  }
+  .model-section {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
